@@ -18,6 +18,7 @@
 
 header {
     padding-top: 10px;
+    padding-bottom: 50px;
 }
 
 nav {
@@ -117,6 +118,110 @@ nav {
     height: 64px;
 }
 
+.first_section {
+    background: #f4f6f8;
+    padding-top: 129px;
+    padding-bottom: 119px;
+}
+
+.section1_top {
+    display: flex;
+    gap: 26px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section1_top h2 {
+    max-width: 1014px;
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 44px;
+    line-height: 123%;
+    text-align: center;
+    color: #000;
+}
+
+.section1_top p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 133%;
+    text-align: center;
+    color: #000;
+}
+
+.section1_top_btn {
+    border-radius: 8px;
+    width: 235px;
+    height: 56px;
+    background: #f50e30;
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    text-align: center;
+    color: #fff;
+    border: none;
+}
+
+.section1_cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    position: relative;
+    border-radius: 20px;
+    width: 411px;
+    height: 264px;
+    box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.08);
+    background: #fff;
+    padding: 24px 0 0 32px;
+}
+
+.card h3 {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 122%;
+    color: #000;
+    margin-bottom: 27px;
+}
+
+.card p {
+    width: 302px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.card_img_3 {
+    position: absolute;
+    right: 5px;
+    bottom: 8px;
+}
+
+.card_img_2 {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+
+.card_img_1 {
+    position: absolute;
+    right: 10px;
+    bottom: 18px;
+}
+
+.btn_media {
+    display: none;
+}
+
+
 @media(max-width:700px) {
     .container {
         width: 90%;
@@ -134,39 +239,61 @@ nav {
         display: block;
     }
 
-    .hero{
+    .hero {
         margin-top: 43px;
     }
 
-    .hero_section{
+    .hero_section {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .hero_section img{
+    .hero_section img {
         display: block !important;
         width: 100%;
     }
 
-    .hero_section h2{
+    .hero_section h2 {
         font-size: 32px;
         text-align: center;
         width: 70%;
         margin-bottom: 32px;
     }
 
-    .hero_section p{
+    .hero_section p {
         text-align: center;
         font-size: 16px;
         margin-top: 20px;
         margin-bottom: 32px;
     }
-    .hero_car{
+
+    .hero_car {
         display: none;
     }
 
-    .hero_section button{
+    .hero_section button {
         width: 100%;
+    }
+
+    .btn_media {
+        display: block;
+        margin-top: 32px;
+    }
+    .section1_top button {
+        display: none;
+    }
+
+    .section1_top h2{
+        font-size: 28px;
+    }
+
+    .first_section{
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+    .section1_cards{
+        justify-content: center;
+        gap: 12px;
     }
 }
